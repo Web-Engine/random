@@ -1,7 +1,7 @@
 # Random
 Consideration about how to get unique random number fastest and unbiased probability.
 
-## Ways
+## Ways to get unique random number
 The code below is written in Java.
 
 ### 1. Use `HashSet` and check duplicate
@@ -46,3 +46,16 @@ also, It takes time longer when `max` and `count` are similar.
     }
     
 This code can takes time longer when `max` is big. (for create array list)
+
+
+### Compare Way 1(HashSet) and Way 2(ArrayList)
+
+#### Think before the test
+I think way2(ArrayList) is faster in most situations because it never occur duplicate.
+
+#### Test Code
+
+#### Test Result
+
+#### After the test
+but It's not. The creating array list and remove element is very slow.
